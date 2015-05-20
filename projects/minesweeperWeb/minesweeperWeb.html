@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Drew Romanyk - Minesweeper</title>
+        <script type="text/javascript" src="../../jquery-2.1.4.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+        <script src="./minesweeperWeb.js"></script></script>
+    </head>
+    <body>
+        
+        <!-- NAV -->
+        <nav class="indigo" role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="../../index.html" class="brand-logo">Drew Romanyk</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="../projects.html">Projects</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a href="../projects.html">Projects</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </nav>
+        
+        <!-- CONTAINER -->
+        <div class="section no-pad-bot no-pad-top" id="index-banner">
+            <div class="container">
+                <br />
+                <div class="row center">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button indigo btn' href='#' data-activates='dropdown1'>Difficulty</a>
+
+                    <!-- Dropdown Structure -->
+                    <ul id='dropdown1' class='dropdown-content indigo-text'>
+                        <li><a id="easy">Easy</a></li>
+                        <li><a id="medium">Medium</a></li>
+                        <li><a id="expert">Expert</a></li>
+                    </ul>
+                    <a id="startGame" class="btn waves-effect waves-light indigo">Play Minesweeper</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- MINESWEEPER TABLE -->
+        <div class="container">
+            <!--<div style="position:absolute;left:50%;margin-left:-25%;top:50%;margin-top:-25%;width:50%;height:50%;">-->
+            <!--<div style="position:absolute;left:50%;margin-left:-25%;top:50%;margin-top:-15%;width:50%;height:30%;">-->
+            <div>
+                <table id="boardFrame"></table>               
+            </div>
+        </div>
+    </body>
+</html>
