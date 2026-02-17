@@ -1,12 +1,16 @@
-#files created by OS
+# Astro
+node_modules/
+dist/
+.astro/
+
+# OS
 .DS_Store
 .DS_Store?
 ._*
 .Spotlight-V100
 .Trashes
+
+# Editor
 .swp
 *.swp
-.swp/
-
-.idea
 .idea/

@@ -1,0 +1,43 @@
+---
+import LinksLayout from '../layouts/LinksLayout.astro';
+import LinkCard from '../components/LinkCard.astro';
+
+const services = [
+  { name: 'Seerr', url: 'https://requests.romanyk.dev', description: 'Request media' },
+];
+---
+
+<LinksLayout title="Drew's Links">
+  <div class="links-container">
+    <h1>Drew's Links</h1>
+    <p class="subtitle">Quick access to services</p>
+    <div class="links-list">
+      {services.map((service) => <LinkCard {...service} />)}
+    </div>
+  </div>
+</LinksLayout>
+
+<style>
+  .links-container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .subtitle {
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+
+  .links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+</style>
