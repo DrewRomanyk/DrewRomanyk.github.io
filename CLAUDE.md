@@ -1,0 +1,7 @@
+# CLAUDE Compatibility Shim
+
+This file is kept for Claude compatibility.
+
+Primary instructions live in [AGENTS.md](./AGENTS.md).
+
+If there is any conflict, `AGENTS.md` is the source of truth.
