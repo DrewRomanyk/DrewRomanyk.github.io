@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  @page {
+    size: letter;
+    margin: 0.75in 0.85in;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.45;
+    color: #222;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.2em;
+  }
+  .header h1 {
+    font-size: 32pt;
+    font-weight: 800;
+    line-height: 1.05;
+    color: #111;
+  }
+  .contact {
+    text-align: right;
+    font-size: 10pt;
+    color: #444;
+    padding-top: 0.3em;
+    line-height: 1.7;
+  }
+
+  /* Section headers */
+  h2 {
+    font-size: 18pt;
+    font-weight: 800;
+    color: #111;
+    margin-top: 1em;
+    margin-bottom: 0.6em;
+    border-bottom: none;
+  }
+
+  /* Job entries */
+  .entry { margin-bottom: 1em; }
+  .entry-date {
+    font-size: 9pt;
+    font-weight: 600;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.15em;
+  }
+  .entry-title {
+    font-size: 11pt;
+    margin-bottom: 0.3em;
+  }
+  .entry-title .role {
+    font-weight: 700;
+    color: #3daa5c;
+  }
+  .entry-title .company {
+    font-weight: 400;
+    color: #222;
+  }
+
+  /* Bullet lists */
+  ul {
+    margin-left: 1.2em;
+    margin-top: 0.15em;
+  }
+  li {
+    margin-bottom: 0.2em;
+    line-height: 1.45;
+  }
+
+  /* Skills */
+  .skills ul { margin-left: 1.2em; }
+  .skills li { margin-bottom: 0.15em; }
+
+  /* Education */
+  .education .coursework {
+    font-size: 10pt;
+    color: #444;
+    line-height: 1.5;
+    margin-top: 0.2em;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Drew<br>Romanyk</h1>
+  <div class="contact">
+    Bellevue, WA<br>
+    drew.romanyk@gmail.com<br>
+    (972) 896-5003
+  </div>
+</div>
+
+<h2>Experience</h2>
+
+<div class="entry">
+  <div class="entry-date">2023–Present</div>
+  <div class="entry-title">
+    <span class="role">Senior Software Engineer</span><span class="company">/Databricks @ Bellevue, Washington</span>
+  </div>
+  <ul>
+    <li>Work on frontend serving infrastructure; GraphQL infrastructure, UI asset serving, logging systems, and in-house analytics solutions</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <div class="entry-date">2018–2023</div>
+  <div class="entry-title">
+    <span class="role">Senior Software Engineer</span><span class="company">/Microsoft (Azure PlayFab) @ Redmond, Washington</span>
+  </div>
+  <ul>
+    <li>Ensured customers success through maintaining service reliability through on call, new features, and requests for distributed service that handles hundreds of thousands of requests per second</li>
+    <li>Architected and managed multiple engineers to migrate custom C# compute deployments to Kubernetes deployments; improved engineering success through quicker builds and deployments and secured processes and common tooling for less code maintenance and whole organization use</li>
+    <li>Reduced operational costs and expenses by millions of dollars through migrating AWS cloud compute &amp; data resources to internal Azure cloud data &amp; compute resources</li>
+    <li>Collaborated with teams across the world to implement our services to be compliant and function in China</li>
+    <li>Led initiative to migrate Knockout C# Razor server-side rendered frontend to asynchronous client-side rendered frontend with TypeScript using React and created proper testing frameworks</li>
+    <li>Mentored junior engineers to have an impact on our customers by helping them learn the industry, coding standards and modern best practices</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <div class="entry-date">Summer 2017</div>
+  <div class="entry-title">
+    <span class="role">Software Engineer Intern</span><span class="company">/RetailMeNot @ Austin, Texas</span>
+  </div>
+  <ul>
+    <li>Improved customer experience by developing an engineering metrics application that helped teams make informed planning decisions</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <div class="entry-date">Summer 2016</div>
+  <div class="entry-title">
+    <span class="role">Software Engineer Intern</span><span class="company">/Tilt (acquired by Airbnb) @ Austin, Texas</span>
+  </div>
+  <ul>
+    <li>Developed new features for the Android application that improved API performance and reduced build times to make engineers and Tilt services more efficient</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <div class="entry-date">Spring 2015–Fall 2015</div>
+  <div class="entry-title">
+    <span class="role">Software Engineer Intern</span><span class="company">/Cerebri @ Austin, Texas</span>
+  </div>
+  <ul>
+    <li>Created Android &amp; iOS applications to help people in need find social services</li>
+    <li>Utilized IBM's Watson Machine Learning on new application initiatives</li>
+  </ul>
+</div>
+
+<h2>Skills</h2>
+<div class="skills">
+  <ul>
+    <li>Over 8 years of experience in software development, data migration, agile &amp; scrum workflows, &amp; high-scale distributed systems</li>
+    <li>Cloud experience with AWS &amp; Azure</li>
+    <li>Data experience with NoSQL, SQL, &amp; Redis</li>
+    <li>Code experience with C#, TypeScript, Python, Kotlin, Java, Swift, JavaScript, &amp; Golang</li>
+    <li>Framework experience with dotnet, React, Kubebuilder, iOS, Android, REST, &amp; Swagger</li>
+    <li>Infrastructure experience with Kubernetes, Git, Bash, PowerShell, Jenkins, Azure DevOps, Datadog, Terraform, Traefik, Linkerd, Istio, service mesh, Github Actions, microservices, &amp; Docker containers</li>
+    <li>Exposure to Flask, Django, Google Cloud Platform, Hadoop, NodeJS, ExpressJS, Objective-C, PHP, Hack, GraphQL, Rust, C, &amp; C++</li>
+  </ul>
+</div>
+
+<h2>Education</h2>
+<div class="education">
+  <div class="entry">
+    <div class="entry-date">May 2018</div>
+    <div class="entry-title">
+      <span class="role">Bachelor of Science Computer Science</span><span class="company">/University of Texas, Austin, Texas</span>
+    </div>
+    <div class="coursework">
+      Data Structures &bull; Longhorn Startup &bull; Advanced Computer Architecture &bull; Machine Learning Research &bull; Operating Systems &bull; Algorithms &bull; Graphics &bull; Quantum Computing &bull; Software Engineering &bull; Competitive Programming &bull; Big Data Programming &bull; Virtualization
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
